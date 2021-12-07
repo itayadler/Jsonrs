@@ -29,7 +29,8 @@ defmodule Jsonrs.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "~> 0.21.0"},
+      {:rustler,
+       git: "https://github.com/rusterlium/rustler", ref: "d5d003dce8790c0e576411ed1521db2bc97a8225"},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
     ]
   end
