@@ -9,7 +9,7 @@ defmodule Jsonrs.MixProject do
       version: @version,
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
-      compilers: [:rustler] ++ Mix.compilers(),
+      compilers: Mix.compilers(),
       rustler_crates: rustler_crates(),
       deps: deps(),
       description: description(),
